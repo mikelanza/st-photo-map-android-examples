@@ -16,16 +16,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [ google_map_key:localProperties['google_map_key']]
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [ google_map_key:localProperties['google_map_key']]
-        }
-
-        debug {
-            manifestPlaceholders = [ google_map_key:localProperties['google_map_key']]
         }
     }
 }
