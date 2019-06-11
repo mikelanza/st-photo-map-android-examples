@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Examples</string>
+
+    <string name="photo_map_without_filters_activity_title">Photo Map Without Filters</string>
+</resources>
