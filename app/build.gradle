@@ -24,6 +24,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -40,5 +44,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
 
     implementation 'com.github.mikelanza:st-photo-map-android:develop-SNAPSHOT'
+//    implementation 'com.github.mikelanza:st-photo-map-android:feature~zoom_level_implementation-SNAPSHOT'
+
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.2'
 }
